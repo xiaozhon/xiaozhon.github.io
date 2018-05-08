@@ -4,8 +4,19 @@ body{
 	margin: auto;
 
 	padding: 5px 5px;
-	
+
+	background-color: #EFEEEE;
+
 }
+
+/*.heading {
+	background-color: white;
+}
+
+.about {
+	background-color: white;
+}
+*/
 
 a.back-to-top {
 	display: none;
@@ -33,6 +44,7 @@ hr {
 	display: inline;
 	float: left;
 	padding: 0px 20px 0px 0px;
+	font-weight: bold;
 }
 
 p.sec-title{
@@ -52,4 +64,12 @@ p.sec-content{
 .table-col1{
 	vertical-align: top;
 	width: 180px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+hr {
+	border-color: lightgray;
 }
