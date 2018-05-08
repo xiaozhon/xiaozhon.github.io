@@ -1,1 +1,260 @@
-Hello World
+<!doctype html>
+<html>
+	<head>
+		<title>Xiaoyang Zhong-CS@PU</title>
+		
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+		
+		<link href="styles/main.css" rel="stylesheet" type="text/css"/>
+		
+	</head>
+	
+	
+	<body>
+		
+		<div class="container heading">
+			<div class="row">
+				<div class="col-sm-3"><img src="xiaoyang_zhong4.png" alt="pic" height="200"/>
+				</div>
+				
+				<div class="col-sm-9">
+					<h1>Xiaoyang Zhong</h1>
+					<br />
+					<p>
+						Ph.D. in Computer Science, Purdue University
+					</p>
+					<p>Email: xiaoyang399@gmail.com</p>
+					<p>Phone: 317-459-5648</p>
+					<ul class="myNav">
+						<li><a href="#edu">Education</a></li>
+						<li><a href="#res">Research</a></li>
+						<li><a href="#pub">Publications</a></li>
+						<li><a href="#tut">IoT Tutorials</a></li>
+						<li><a href="resume.pdf">Resume</a></li>
+					</ul>
+
+				</div>
+			</div>
+			<hr />
+		</div>
+		
+		<div class="container about">
+			<p>
+				I am a PhD candidate studying Computer Science in Purdue University under the instruction 
+				of Dr. Yao Liang from CIS@IUPUI and Dr. Y. Charlie Hu from CS@PUWL.
+			</p>
+			<p> I am going to graduate in May 2018, and am looking for a full time job / research 
+				scientist position. 
+			</p>
+			<p>
+				My research interests focus not only the theoretical but also very practical problems 
+				in the area of Internet of Things (IoT) and Wireless Sensor Networks (WSNs), including 
+				downward routing, upward routing, over-the-air reprogramming, routing topology 
+				reconstruction, WSN testbed deployment, and sensor driver development, and so on. 
+
+			</p>
+			
+			<p>
+				I have the developed and implemented varies applications/protocols/tools/algorithms to 
+				test and run in a long-term outdoor environmental monitoring WSN testbed WSN 
+				testbed (<a href="https://sites.google.com/site/aswpitt/home">ASWP</a>) 
+				in cooperation with Department of Civil and Environmental Engineering, Pittsburgh 
+				University.
+			</p>
+
+			<p> I Have worked on varies IoT/WSN platforms and devices, including TinyOS, Contiki, 
+				TelosB, IRIS, MicaZ, Raspberry Pi, Arduino, and so on.
+			</p>
+
+			<p>
+				I also worked as TA for many related course. Especially, I have been the TA for IoT 
+				undergraduate course since Fall 2015.
+			
+			</p>
+			<hr />
+		</div>
+		
+		
+		<div class="container section">
+			 <p class="sec-title" id="edu">EDUCATION</p>
+			 
+			 <table>
+			 	<tbody>
+			 		<tr>
+			 			<td class="table-col1">2011 ~ Present</td>
+			 			<td><b>Ph.D in Computer Science</b>, Purdue University</td>
+			 		</tr>
+			 		<tr>
+			 			<td class="table-col1"></td>
+			 			<td>Research Interests: Internet of Things and Wireless Sensor Networks. <br>
+			 				GPA: 3.91/4.0
+			 			</td>
+			 		</tr>
+
+			 		<tr>
+			 			<td class="table-col1">2007 ~ 2011</td>
+			 			<td><b>B.S in Electronic Science and Technology</b>, University of Science and Technology of China (USTC)</td>
+			 		</tr>
+			 		<tr>
+			 			<td class="table-col1"></td>
+			 			<td> </td>
+			 		</tr>
+			 	</tbody>
+			 </table>
+			 
+			<hr />
+			
+			<p class="sec-title" id="res">RESEARCH</p>
+			
+			<!-- <p><b>Projects</b></p> -->
+			<p class="sec-title_sub" id="sub1"> <b>IoT/WSN protocols and applications </b></p>
+			<ul>
+				<li>
+					<b>Downward Routing in IoT/WSNs</b>
+					<p style="LINE-HEIGHT:20px;">
+					Designed a reliable (>98%), energy efficient (negligible overhead), and extremely 
+					scalable downward routing protocol for IoT/WSN. Significantly improves the scalability 
+					in terms of the network diameter compared to existing approaches. Implemented in 
+					TinyOS/nesC for varies sensor platforms.
+					</p>
+					
+				</li>
+				<li>
+					<b>MobileDeluge</b> 
+					<p style="LINE-HEIGHT:20px;">
+					Designed a mobile over-the-air programming tool to assist the node reprogramming process 
+					in out-door, heterogeneous, and duty-cycled WSN deployments. Significantly reduced the 
+					labor for network maintenance. Implemented in TinyOS/nesC for varies sensor platforms; 
+					developed PC side gateway in Java.
+					</p>
+				</li>
+				<li>
+					<b>Routing Topology Recovery</b> 
+					<p style="LINE-HEIGHT:20px;">
+					Implemented and evaluated routing topology recovery algorithm in very dynamic WSNs through 
+					both simulations and real-world testbed. Implemented in TinyOS/nesC for varies sensor 
+					platforms; implemented PC side decompression algorithm in Python.
+					</p>
+				</li>
+				<li>
+					<b>Sensor Boards for TelosB Motes</b> 
+					<p style="LINE-HEIGHT:20px;">
+					Designed a sensor board for TelosB mote to drive external sensors (<a href="http://www.decagon.com/en/">
+					Decagon</a> EC-5 soil moisture sensor, MSP-1 water potential sensor, and MPS-2 digital water 
+					potential sensor). Solved the clock drift problem of TelosB using a fridge, oscilloscope, 
+					and sensor driver in TinyOS/nesC.
+					</p>
+				</li>
+				<li>
+					<b>GureenGame</b> 
+					<p style="LINE-HEIGHT:20px;">
+					Implemented and evaluated an extended Gur Game algorithm to autonomously control 
+					the number of reports from the WSNs.
+					</p>
+				</li>
+			</ul>
+			
+			<p class="sec-title_sub" id="sub1"> <b>IoT/WSN Benchmark and Network Analysis </b></p>
+			<ul>
+				<li>
+					<b>WSN Benchmark</b>
+					<p style="LINE-HEIGHT:20px;">
+					Designing a benchmark data suite for routing protocols in IoT/WSNs using the several years 
+					data from ASWP testbed. Analyzing the characteristics of the data suite in Python.
+					</p>
+				</li>
+				<li>
+					<b>Network Dynamics</b> 
+					<p style="LINE-HEIGHT:20px;">
+					Characterized the network dynamics using concepts such as Laplacian Matix, 
+					node entropy, etc. 
+					</p>
+				</li>
+			</ul>
+
+			<p class="sec-title_sub" id="sub1"><b>Research Groups</b></p>
+			
+			<ul>
+				<li><a href="http://sensornet.cs.iupui.edu">WSN Research Group</a></li>
+				<li><a href="https://sites.google.com/site/aswpitt/home">ASWP WSN Testbed</a></li>
+			</ul>
+
+			
+			<hr />
+			<p class="sec-title" id="pub">PUBLICATIONS</p>
+			
+			<p class="pub">
+			G. Villalba, F. Plaza, <u>X. Zhong</u>, T. W. Davis, M. Navarro, Y. Li, T. A. Slater, Y. Liang, and X. Liang, "A Networked Sensor System for the Analysis of Plot-Scale Hydrology", Sensors, 2017, 17(3), 636. (<a href="pubs/sensors_2017.pdf">pdf</a>)
+			</p>
+			
+			<p class="pub">
+			<u>Zhong, Xiaoyang</u> and Yao Liang. "Raspberry Pi: An Effective Vehicle in Teaching the Internet of Things in Computer Science and Engineering." Electronics (Basel) 2016. (<a href="pubs/RPi_2016.pdf">pdf</a>)
+			</p>
+			
+			<p class="pub">
+			Liu, Rui, Yao Liang, and <u>Xiaoyang Zhong</u>. "Monitoring Routing Topology in Dynamic Wireless Sensor Network Systems." ICNP 2015. (<a href="pubs/ICNP_2015.pdf">pdf</a>)
+			</p>
+			
+			<p class="pub">
+			Liu, Rui, Yao Liang, and <u>Xiaoyang Zhong</u>. "Poster: Compressed Sensing Inspired Approaches for Path Reconstruction in Wireless Sensor Networks." In Proceedings of the 16th ACM International Symposium on Mobile Ad Hoc Networking and Computing, pp. 379-380. ACM, 2015. (<a href="pubs/MobiHoc_2015.pdf">pdf</a>)
+			</p>
+			
+			<p class="pub">
+			Navarro, Miguel, Tyler W. Davis, German Villalba, Yimei Li, <u>Xiaoyang Zhong</u>, Newlyn Erratt, Xu Liang, and Yao Liang. "Towards long-term multi-hop WSN deployments for environmental monitoring: an experimental network evaluation." Journal of Sensor and Actuator Networks 3, no. 4 (2014): 297-330. (<a href="pubs/JSAN_2014.pdf">pdf</a>)
+			</p>
+			
+			<p class="pub">
+			<u>Zhong, Xiaoyang</u>, Miguel Navarro, German Villalba, Xu Liang, and Yao Liang. "MobileDeluge: Mobile Code Dissemination for Wireless Sensor Networks." In Mobile Ad Hoc and Sensor Systems (MASS), 2014 IEEE 11th International Conference on, pp. 363-370. IEEE, 2014. (<a href="pubs/MASS_2014.pdf">pdf</a>)
+			</p>
+			
+			<p class="pub">
+			<u>Zhong, Xiaoyang</u>, Miguel Navarro, German Villalba, Xu Liang, and Yao Liang. "MobileDeluge: A Novel Mobile Code Dissemination Tool for WSNs." In 2014 IEEE 11th International Conference on Mobile Ad Hoc and Sensor Systems (MASS), pp. 537-538. IEEE, 2014. (<a href="pubs/MASS_demo_2014.pdf">pdf</a>)
+			</p>
+			
+			<hr />
+			
+			<p class="sec-title" id="tut">IoT TUTORIALS</p>
+			
+			<p>I worked as TA for several network related courses: Data Communication & Computer Networks (53600, 43600), Wireless Sensor Networks (59000), Internet of Things (49000).</p>
+			<p>Internet of Things is a relatively new area consisting many newly developed hardware and software, resulting in insufficient support for beginners. I developed tutorials to help students to get hands-on experiences on IoT-related hardware and softwares. (some links in the tutorials may be outdated due to the updates in the websites)</p>
+			
+			<ul>
+				<li><a href="course_tutorials/Coap_tutorial_RPi.pdf">CoAP tutorial for Raspberry Pi</a></li>
+				<li><a href="course_tutorials/Coap_tutorial_Arduino_Eclipse">CoAP tutorial for Arduino and Eclipse</a></li>
+				<li><a href="course_tutorials/Arduino_and_Java_Serial.pdf">Arduino: serial communication using Java</a></li>
+				<li><a href="course_tutorials/Tutorial_Arduino_with_RN-VX_WiFly Module.pdf">Arduino: work with RN-VX WiFly Module</a></li>
+				<li><a href="course_tutorials/Connecting_to_IU_Secure_RPi_Tutorial.pdf">Raspberry Pi: Connecting to IU Secure</a></li>
+				<li><a href="course_tutorials/Tutorial_Raspberry_Pi_with_Laptop_Screen.pdf">Raspberry Pi: work with laptop screen and keyboard</a></li>
+			</ul>
+			<hr />
+			
+			
+		</div>
+		<br />
+		<footer style="text-align:center">@2018 Purdue University</footer>
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		
+		<script type="text/javascript">
+			$('body').prepend('<a href="#" class="back-to-top"><img src="styles/Png_Up_Arrow_01.png" alt="up" height="22" width="33"/></a>');
+			var amountScrolled = 200;
+
+			$(window).scroll(function() {
+				if ( $(window).scrollTop() > amountScrolled ) {
+					$('a.back-to-top').fadeIn('slow');
+				} else {
+					$('a.back-to-top').fadeOut('slow');
+				}
+			});
+		</script>
+		
+	</body>
+	
+</html>

@@ -1,0 +1,55 @@
+body{
+	font-family: arial;
+	font-size: 17px;
+	margin: auto;
+
+	padding: 5px 5px;
+	
+}
+
+a.back-to-top {
+	display: none;
+
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 50%;
+
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+hr {
+	margin-bottom: 5px;
+}
+
+.myNav{
+	list-style-type: none;
+	padding: 5px 0px 5px 0px;
+	overflow: hidden;
+}
+.myNav li{
+	display: inline;
+	float: left;
+	padding: 0px 20px 0px 0px;
+}
+
+p.sec-title{
+	font-size: 24px;
+	text-align: center;
+}
+
+p.sec-title_sub{
+	font-size: 18px;
+	text-align: left;
+}
+
+p.sec-content{
+
+}
+
+.table-col1{
+	vertical-align: top;
+	width: 180px;
+}
