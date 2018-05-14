@@ -12,6 +12,7 @@
 		
 		<link href="styles/main.css" rel="stylesheet" type="text/css"/>
 		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	
 	
@@ -26,7 +27,7 @@
 				<div class="col-sm-9">
 					<h1>Xiaoyang Zhong</h1>
 					<br />
-					<p>
+					<p style='font-size:16pt'>
 						Ph.D. in Computer Science, Purdue University
 					</p>
 					<p><img src="imgs/email5.png" alt="pic" style="width:25px"/> 
@@ -48,30 +49,21 @@
 		
 		<div class="container about">
 			<p>
-				I am a PhD studying Computer Science in Purdue University 
-				under the instruction of Dr. Yao Liang from CIS@IUPUI and Dr. Y. 
-				Charlie Hu from CS@PUWL.
+				I am a new grad PhD in Computer Science from Purdue University. My advisors are Dr. Yao Liang from CIS@IUPUI and Dr. Y. Charlie Hu from CS@PUWL.
 			</p>
-			<p> I have just graduated in May 2018, and am looking for a full time 
-				job / research scientist position. 
+			<p> I am looking for a full time job / research scientist position. 
 			</p>
 			<p>
-				My PhD research lies in the area of Internet of Things (IoT) and Wireless Sensor Networks (WSNs), including downward routing, upward routing, over-the-air reprogramming, routing topology reconstruction, WSN testbed deployment, and sensor driver development, etc. 
+				My PhD research focus on the area of Internet of Things (IoT) and Wireless Sensor Networks (WSNs), including downward routing, upward routing, over-the-air reprogramming, routing topology reconstruction, WSN testbed deployment, and sensor driver development, etc. 
 			</p>
 			
-			<p>
-				I have the developed and implemented various applications/protocols/tools/
-				algorithms to test and run in a long-term outdoor environmental monitoring
-				 WSN testbed testbed (<a href="https://sites.google.com/site/aswpitt/home">ASWP</a>) in cooperation with Department of Civil and Environmental Engineering, Pittsburgh University.
-			</p>
-
-			<p> I Have worked on various IoT/WSN platforms and devices, including TinyOS, 
-				Contiki OS, TelosB, IRIS, MicaZ, Raspberry Pi, Arduino, etc.
+			<p> 
+				I have developed network protocols and algorithms based on various IoT/WSN platforms and devices, including TinyOS, Contiki OS, TelosB, IRIS, MicaZ, Raspberry Pi, Arduino, etc.
 			</p>
 
 			<p>
-				In my spare time, I like to have a bite of different technologies, such as 
-				Android development, P4 language, HTML/CSS, Docker, etc. 
+				Though my PhD study, I have built a solid background in computer science (data structures and algorithms, computer networking, operating systems, database, etc). My background enables me to learn things quickly. In my spare time, I have had a bite of different technologies, such as 
+				Android development, P4 language, Web development, etc. 
 			</p>
 			<hr />
 		</div>
@@ -121,9 +113,12 @@
 				<li>
 					<b>WSN Deployment </b>
 					<p style="LINE-HEIGHT:20px;">
-					Developed applications for an out-door heterogeneous WSN testbed for hydrology
-					and WSN research. <br>
-					-&ensp; The testbed has about 100 nodes of different types (i.e., MicaZ, IRIS, TelosB). <br>
+					Developed applications for an out-door heterogeneous WSN testbed for hydrology and WSN research. 
+					<button class='button_astext' id='wsn_btn' onclick="showDetail('wsn_btn','detail_wsn')"><i><u>More</u></i></button>
+					</p>
+					<p style="display:none;" id='detail_wsn'>
+					-&ensp; The testbed has about 100 nodes of different types, including ATmega128 based devices (MicaZ and IRIS) and TI MSP430 based device (TelosB). <br>
+					-&ensp; The wireless networking is based on IEEE 802.15.4 (the underlying technology of ZigBee) <br>
 					-&ensp; Perform vairous tasks including upward routing, downward routing,
 					 over-the-air programming, compressed sensing, flash accessing, etc.  <br>
 					-&ensp; Everything has to fit in the tiny nodes of 4 KB RAM (MicaZ) 
@@ -134,7 +129,11 @@
 				<li>
 					<b>Downward Routing in IoT/WSNs</b>
 					<p style="LINE-HEIGHT:20px;">
-					Designed a reliable (>98%), energy efficient (negligible overhead), and extremely scalable downward routing protocol for IoT/WSN. <br>
+					Designed a reliable (>98%), energy efficient (negligible overhead), and extremely scalable downward routing protocol for IoT/WSN. 
+					<button class='button_astext' id='osr_btn' onclick="showDetail('osr_btn','detail_osr')"><i><u>More</u></i></button>
+					</p>
+
+					<p style="display:none;" id='detail_osr'>
 					-&ensp; Introduce opportunistic routing into source routing. <br>
 					-&ensp; Encode source-route using an adaptive Bloom filter. <br>
 					-&ensp; Build downward routing table based on upward traffic. <br>
@@ -145,7 +144,11 @@
 					<b>MobileDeluge</b> 
 					<p style="LINE-HEIGHT:20px;">
 					Designed a mobile over-the-air programming tool to assist the node 
-					reprogramming process in out-door, heterogeneous, and duty-cycled WSN deployments. Significantly reduced the labor for network maintenance. <br>
+					reprogramming process in out-door, heterogeneous, and duty-cycled WSN deployments. Significantly reduced the labor for network maintenance. 
+					<button class='button_astext' id='md_btn' onclick="showDetail('md_btn','detail_md')"><i><u>More</u></i></button>
+					</p>
+
+					<p style="display:none;" id='detail_md'>
 					-&ensp; A control layer on top of exsiting approaches. <br>
 					-&ensp; A mobile command/query system that enables efficient onsite diagnosis.
 					 <br>
@@ -156,7 +159,10 @@
 				<li>
 					<b>Network Dynamics and WSN Benchmark</b>
 					<p style="LINE-HEIGHT:20px;">
-					Perform network analysis and devise a benchmark data suite for the research community. <br>
+					Perform network analysis and devise a benchmark data suite for the research community.
+					<button class='button_astext' id='bm_btn' onclick="showDetail('bm_btn','detail_bm')"><i><u>More</u></i></button>
+					</p>
+					<p style="display:none;" id='detail_bm'>
 					-&ensp; Network dynamics includes the link level characteristics, network level (topological) characteristics, and temporal characteristics. <br>
 					-&ensp; Measure the network level dynamics based on the number of links, node entropy, and link entropy for the network topology within every 45 minutes. 
 					<br>
@@ -167,7 +173,10 @@
 					<b>Routing Topology Recovery</b> 
 					<p style="LINE-HEIGHT:20px;">
 					Routing topology recovery algorithm based on compressed sensing for very 
-					dynamic WSNs. <br>
+					dynamic WSNs. 
+					<button class='button_astext' id='rtr_btn' onclick="showDetail('rtr_btn','detail_bm')"><i><u>More</u></i></button>
+					</p>
+					<p style="display:none;" id='detail_rtr'>
 					-&ensp; Encode the path information in 4-byte field in each upward packet. <br>
 					-&ensp; Implemented in TinyOS/nesC for various sensor platforms. <br>
 					-&ensp; Implemented PC side decompression algorithm in Python. <br>
@@ -176,17 +185,23 @@
 				<li>
 					<b>Sensor Boards for TelosB Motes</b> 
 					<p style="LINE-HEIGHT:20px;">
-					Designed a sensor board for TelosB mote to drive external sensors. <br>
+					Designed a sensor board for TelosB mote to drive external sensors. 
+					<button class='button_astext' id='telos_btn' onclick="showDetail('telos_btn','detail_telos')"><i><u>More</u></i></button>
+					</p>
+					<p style="display:none;" id='detail_telos'>
 					-&ensp; Sensor board is designed using <a href="https://www.autodesk.com/products/eagle/overview">Eagle</a>. <br>
-					-&ensp; Sensor driver is developed based on TinyOS/nesC. <br>
-					-&ensp; For both analog and digital sensors, e.g., <a href="http://www.decagon.com/en/">Decagon</a> EC-5 soil moisture sensor, MSP-1 water potential sensor, and MPS-2 digital water potential sensor. <br>
+					-&ensp; Sensor driver is developed based on TinyOS/nesC for TI MSP430 based devices. <br>
+					-&ensp; For both analog and digital sensors (UART), e.g., <a href="http://www.decagon.com/en/">Decagon</a> EC-5 soil moisture sensor, MSP-1 water potential sensor, and MPS-2 digital water potential sensor. <br>
 					-&ensp; Solved the clock drift problem (when temperature changes) of TelosB using a fridge and oscilloscope.
 					</p>
 				</li>
 				<li>
 					<b>GureenGame</b> 
 					<p style="LINE-HEIGHT:20px;">
-					Quality of Service control based on Gur Game to autonomously control the number of reports from the WSNs.
+					Quality of Service control based on Gur Game to autonomously control the number of reports from the WSNs. 
+					</p>
+					<p>
+					-&ensp; Nodes autonomously vote to send the report or not. Converge to global stability quickly.
 					</p>
 				</li>
 			</ul>
@@ -278,6 +293,20 @@
 					$('a.back-to-top').fadeOut('slow');
 				}
 			});
+
+			function showDetail(bid, pid) {
+				// button id, paragraph id
+				var x = document.getElementById(pid);
+				if(x.style.display === 'none') {
+					x.style.display = 'block';
+					document.getElementById(bid).innerHTML = '<i><u>Less</u></i>';
+				}			
+				else {
+					x.style.display = 'none';
+					document.getElementById(bid).innerHTML = '<i><u>More</u></i>';
+				}
+				// document.getElementById(pid).style.display = 'block';
+			}
 		</script>
 		
 	</body>
