@@ -1,5 +1,13 @@
+/*
+@font-face{
+	font-family:  Palatino;
+}*/
+
 body{
-	font-family: arial;
+	/*font-family: Palatino;*/
+	/*font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", */
+	/*font-family: "Book Antiqua", sans-serif;*/
+	font-family: Arial;
 	font-size: 17px;
 	margin: auto;
 
