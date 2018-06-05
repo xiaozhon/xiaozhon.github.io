@@ -51,10 +51,10 @@
 			<p>
 				I am a new grad PhD in Computer Science from Purdue University. My advisors are Dr. Yao Liang from CIS@IUPUI and Dr. Y. Charlie Hu from CS@PUWL.
 			</p>
-			<p> I am looking for a full time job / research scientist position. I can start to work from June 1st, 2018.
+			<p> I am looking for a full time job / research scientist position. I am currently on my F1 OPT and I can start to work immediately.
 			</p>
 			<p>
-				My PhD research focus on the area of Internet of Things (IoT) and Wireless Sensor Networks (WSNs), including downward routing, upward routing, over-the-air reprogramming, routing topology reconstruction, WSN testbed deployment, and sensor driver development, etc. 
+				My PhD research focuses on the area of Internet of Things (IoT) and Wireless Sensor Networks (WSNs), including downward routing, upward routing, over-the-air reprogramming, routing topology reconstruction, WSN testbed deployment, and sensor driver development, etc. 
 			</p>
 			
 			<p> 
@@ -80,7 +80,7 @@
 			 		</tr>
 			 		<tr>
 			 			<td class="table-col1"></td>
-			 			<td>Research Interests: Internet of Things and Wireless Sensor Networks. 
+			 			<td>Research Domain: Internet of Things (IoT) and Wireless Sensor Networks (WSNs). 
 			 				<br>
 			 				GPA: 3.93
 			 			</td>
@@ -113,15 +113,14 @@
 				<li>
 					<b>WSN Deployment </b>
 					<p style="LINE-HEIGHT:20px;">
-					Developed applications for an out-door heterogeneous WSN testbed for hydrology and WSN research. 
-					<button class='button_astext' id='wsn_btn' onclick="showDetail('wsn_btn','detail_wsn')"><i><u>More</u></i></button>
+					Designed and developed a complete WSN application suite for long-term environmental monitoring in cooperation with other group members, including node application, gateway, and management system
+					<button class='button_astext' id='wsn_btn' onclick="showDetail('wsn_btn','detail_wsn')"><i><u>Less</u></i></button>
 					</p>
-					<p style="display:none;" id='detail_wsn'>
-					-&ensp; The testbed has about 100 nodes of different types, including ATmega128 based devices (MicaZ and IRIS) and TI MSP430 based device (TelosB). <br>
+					<p style="display:block;" id='detail_wsn'>
+					-&ensp; The testbed has about 100 nodes of different platform types, including ATmega128 based devices (MicaZ and IRIS) and TI MSP430 based device (TelosB). <br>
 					-&ensp; The wireless networking is based on IEEE 802.15.4 (the underlying technology of ZigBee) <br>
-					-&ensp; Perform various tasks including upward routing, downward routing,
-					 over-the-air programming, compressed sensing, flash accessing, etc.  <br>
-					-&ensp; Everything has to fit in the tiny nodes of 4 KB RAM (MicaZ) 
+					-&ensp; Perform various tasks including upward routing, downward routing, over-the-air programming, compressed sensing, flash accessing, etc.  <br>
+					-&ensp; Everything fits in the tiny nodes of 4 KB RAM (MicaZ) 
 					or 48 KB ROM (TelosB).
 					</p>
 					
@@ -129,79 +128,80 @@
 				<li>
 					<b>Downward Routing in IoT/WSNs</b>
 					<p style="LINE-HEIGHT:20px;">
-					Designed a reliable (>98%), energy efficient (negligible overhead), and extremely scalable downward routing protocol for IoT/WSN. 
-					<button class='button_astext' id='osr_btn' onclick="showDetail('osr_btn','detail_osr')"><i><u>More</u></i></button>
+					Designed and implemented a reliable, energy efficient, and extremely scalable routing protocol for node actuation in large-scale IoT systems with resource-constraint devices. 
+					<button class='button_astext' id='osr_btn' onclick="showDetail('osr_btn','detail_osr')"><i><u>Less</u></i></button>
 					</p>
 
-					<p style="display:none;" id='detail_osr'>
-					-&ensp; Introduce opportunistic routing into source routing. <br>
-					-&ensp; Encode source-route using an adaptive Bloom filter. <br>
-					-&ensp; Build downward routing table based on upward traffic. <br>
-					-&ensp; Implemented in TinyOS/nesC for various sensor platforms.
+					<p style="display:block;" id='detail_osr'>
+					-&ensp; Designed a novel Bloom filter to encode source-route which scales to networks with hundreds of hops. <br>
+					-&ensp; Applied opportunistic routing during packet forwarding and achieved packet delivery ratio > 98%. <br>
+					-&ensp; Designed an efficient method to build the routing table based on upward traffic which has negligible energy overhead. <br>
+					-&ensp; Implemented in TinyOS/nesC for various sensor platforms and deployed on a real-world WSN testbed.
 					</p>
 				</li>
 				<li>
 					<b>MobileDeluge</b> 
 					<p style="LINE-HEIGHT:20px;">
 					Designed a mobile over-the-air programming tool to assist the node 
-					reprogramming process in out-door, heterogeneous, and duty-cycled WSN deployments. Significantly reduced the labor for network maintenance. 
-					<button class='button_astext' id='md_btn' onclick="showDetail('md_btn','detail_md')"><i><u>More</u></i></button>
+					reprogramming process in out-door, heterogeneous, and duty-cycled WSN deployments. Significantly reduced the labor for real-world WSN maintenance. 
+					<button class='button_astext' id='md_btn' onclick="showDetail('md_btn','detail_md')"><i><u>Less</u></i></button>
 					</p>
 
-					<p style="display:none;" id='detail_md'>
-					-&ensp; A control layer on top of exsiting approaches. <br>
-					-&ensp; A mobile command/query system that enables efficient onsite diagnosis.
+					<p style="display:block;" id='detail_md'>
+					-&ensp; Designed a control layer on top of exsiting approaches to coordinate the behaviors of the mobile base station and target nodes. <br>
+					-&ensp; Extended the tool to a mobile command/query system that enables efficient onsite diagnosis.
 					 <br>
 					-&ensp; Implemented in TinyOS/nesC for various sensor platforms; <br>
 					-&ensp; Developed PC side gateway in Java.
 					</p>
 				</li>
 				<li>
-					<b>Network Dynamics and WSN Benchmark</b>
+					<b>Network Analysis and Benchmarking</b>
 					<p style="LINE-HEIGHT:20px;">
-					Perform network analysis and devise a benchmark data suite for the research community.
-					<button class='button_astext' id='bm_btn' onclick="showDetail('bm_btn','detail_bm')"><i><u>More</u></i></button>
+					Perform comprehensive network analysis for a real-world WSN testbed and devise a benchmark data suite for the research community.
+					<button class='button_astext' id='bm_btn' onclick="showDetail('bm_btn','detail_bm')"><i><u>Less</u></i></button>
 					</p>
-					<p style="display:none;" id='detail_bm'>
-					-&ensp; Network dynamics includes the link level characteristics, network level (topological) characteristics, and temporal characteristics. <br>
-					-&ensp; Measure the network level dynamics based on the number of links, node entropy, and link entropy for the network topology within every 45 minutes. 
+					<p style="display:block;" id='detail_bm'>
+					-&ensp; Performed network analysis including the link level characteristics, network level (topological) characteristics, and temporal characteristics. <br>
+					-&ensp; Designed metrics based on network entropy to concretely measure the extent of network topology dynamics.
 					<br>
-					-&ensp; The benchmark data suite includes link level information and full topology information.
+					-&ensp; Devised a benchmark data suite for the research community as a reference for protocol evaluation. Designed a missing path filling method to fill the holes in each topology following the principles of the routing protocol.
 					</p>
 				</li>
 				<li>
-					<b>Routing Topology Recovery</b> 
+					<b>Topology Reconstruction for Dynamic WSNs</b> 
 					<p style="LINE-HEIGHT:20px;">
-					Routing topology recovery algorithm based on compressed sensing for very 
-					dynamic WSNs. 
-					<button class='button_astext' id='rtr_btn' onclick="showDetail('rtr_btn','detail_rtr')"><i><u>More</u></i></button>
+					Designed a topology reconstruction algorithm based on compressed sensing in cooperation with another student for very dynamic WSNs.  
+					<button class='button_astext' id='rtr_btn' onclick="showDetail('rtr_btn','detail_rtr')"><i><u>Less</u></i></button>
 					</p>
-					<p style="display:none;" id='detail_rtr'>
-					-&ensp; Encode the path information in 4-byte field in each upward packet. <br>
+					<p style="display:block;" id='detail_rtr'>
+					-&ensp; Designed a novel path encoding method to encode the path information in a 4-byte field in each data packet. <br>
+					-&ensp; Deployed the algorithm on real-world WSN testbed and achieved 96% reconstruction accuracy. <br>
 					-&ensp; Implemented in TinyOS/nesC for various sensor platforms. <br>
 					-&ensp; Implemented PC side decompression algorithm in Python. <br>
 					</p>
 				</li>
 				<li>
-					<b>Sensor Boards for TelosB Motes</b> 
+					<b>Sensor Board and Driver for TelosB (TI MSP430) Platform</b> 
 					<p style="LINE-HEIGHT:20px;">
-					Designed a sensor board for TelosB mote to drive external sensors. 
-					<button class='button_astext' id='telos_btn' onclick="showDetail('telos_btn','detail_telos')"><i><u>More</u></i></button>
+					Designed a sensor board and driver for TelosB mote to drive external sensors. 
+					<button class='button_astext' id='telos_btn' onclick="showDetail('telos_btn','detail_telos')"><i><u>Less</u></i></button>
 					</p>
-					<p style="display:none;" id='detail_telos'>
-					-&ensp; Sensor board is designed using <a href="https://www.autodesk.com/products/eagle/overview">Eagle</a>. <br>
-					-&ensp; Sensor driver is developed based on TinyOS/nesC for TI MSP430 based devices. <br>
-					-&ensp; For both analog and digital sensors (UART), e.g., <a href="http://www.decagon.com/en/">Decagon</a> EC-5 soil moisture sensor, MSP-1 water potential sensor, and MPS-2 digital water potential sensor. <br>
-					-&ensp; Solved the clock drift problem (when temperature changes) of TelosB using a fridge and oscilloscope.
+					<p style="display:block;" id='detail_telos'>
+					-&ensp; Designed a 2-layered sensor board using <a href="https://www.autodesk.com/products/eagle/overview">Eagle</a>. <br>
+					-&ensp; Developed sensor driver based on TinyOS/nesC for TI MSP430 based devices. <br>
+					-&ensp; Worked for both analog and digital sensors (UART), e.g., <a href="http://www.decagon.com/en/">Decagon</a> EC-5 soil moisture sensor, MSP-1 water potential sensor, and MPS-2 digital water potential sensor. <br>
+					-&ensp; Solved the clock drifting problem of TelosB during UART communication using a fridge and oscilloscope. <br>
+					-&ensp; Reduced the cost of unit sensor board to be less than $10.
 					</p>
 				</li>
 				<li>
-					<b>GureenGame</b> 
+					<b>Quality of Service Control for the Internet of Things Systems</b> 
 					<p style="LINE-HEIGHT:20px;">
-					Quality of Service control based on Gur Game to autonomously control the number of reports from the WSNs. 
+					Designed a distributed QoS control algorithm based on Gur Game to control nodes’ sleep/active states. 
 					</p>
 					<p>
-					-&ensp; Nodes autonomously vote to send the report or not. Converge to global stability quickly.
+					-&ensp; Improved energy efficiency of the whole network for about 30%; achieved fast system convergence. <br>
 					</p>
 				</li>
 			</ul>
@@ -211,16 +211,16 @@
 				<li>
 					<b>Smart Home</b>
 					<p style="LINE-HEIGHT:20px;">
-					-&ensp; Use Raspberry Pi/Arduino to control home device with CoAP protocol. <br>
-					-&ensp; Develop Python server to send notifications using email (SMTP) and SMS (Twillio).
+					-&ensp; Designed a system using Raspberry Pi/Arduino to control home device with CoAP protocol. <br>
+					-&ensp; Developed Python server to send notifications using email (SMTP) and SMS (Twillio).
 					</p>
 				</li>
 				<li>
-					<b>Green House</b> 
+					<b>Greenhouse</b> 
 					<p style="LINE-HEIGHT:20px;">
-					-&ensp; Use TelosB platform (with Contiki OS) to monitor temperature, humidity, light, and soil moisture for home plants. <br>
-					-&ensp; Nodes communicates with the base station using RPL protocol. <br>
-					-&ensp; PC side server is developed using Python, which parses the sensor data, and sends notification using email (SMTP) and SMS (Twillio).
+					-&ensp; Designed a system using TelosB platform (with Contiki OS) to monitor temperature, humidity, light, and soil moisture for home plants. <br>
+					-&ensp; Implemented the wireless communication based in IEEE 802.15.4 and the RPL protocol. <br>
+					-&ensp; Developed PC side server using Python, which parses the sensor data and sends notification using email (SMTP) and SMS (Twillio).
 					</p>
 				</li>
 			</ul>
@@ -242,10 +242,6 @@
 			
 			<p class="pub">
 			Liu, Rui, Yao Liang, and <u>Xiaoyang Zhong</u>. <a href="pubs/ICNP_2015.pdf">Monitoring Routing Topology in Dynamic Wireless Sensor Network Systems</a>. ICNP 2015.
-			</p>
-			
-			<p class="pub">
-			Liu, Rui, Yao Liang, and <u>Xiaoyang Zhong</u>. <a href="pubs/MobiHoc_2015.pdf">Poster: Compressed Sensing Inspired Approaches for Path Reconstruction in Wireless Sensor Networks</a>. In Proceedings of the 16th ACM International Symposium on Mobile Ad Hoc Networking and Computing, pp. 379-380. ACM, 2015.
 			</p>
 			
 			<p class="pub">
