@@ -20,12 +20,8 @@
 		
 		<div class="container heading">
 			<div class="row">
-				<div class="col-sm-3"><img src="imgs/xiaoyang_zhong4.png" alt="Avatar" 
-						style="width:170px"/>
-				</div>
-				
-				<div class="col-sm-9">
-					<h1>Xiaoyang Zhong</h1>
+				<div class="col-sm-12">
+					<h2>Xiaoyang Zhong</h2>
 					<br />
 					<p style='font-size:16pt'>
 						Ph.D. in Computer Science, Purdue University
@@ -51,19 +47,18 @@
 			<p>
 				I am a new grad PhD in Computer Science from Purdue University. My advisors are Dr. Yao Liang from CIS@IUPUI and Dr. Y. Charlie Hu from CS@PUWL.
 			</p>
-			<p> I am looking for a full time job / research scientist position. I am currently on my F1 OPT and I can start to work immediately.
+			<p> I am looking for a full-time job/research scientist position. I am currently on my F1 OPT and I can start to work immediately.
 			</p>
 			<p>
-				My PhD research focuses on the area of Internet of Things (IoT) and Wireless Sensor Networks (WSNs), including downward routing, upward routing, over-the-air reprogramming, routing topology reconstruction, WSN testbed deployment, and sensor driver development, etc. 
+				During my PhD study, I have solved essential problems in the area of Wireless Sensor Networks (WSNs) and the Internet of Things (IoT) both theoretically and practically, including downward routing, upward routing, over-the-air reprogramming, routing topology reconstruction, WSN testbed deployment, and sensor driver development, etc. 
 			</p>
 			
 			<p> 
-				I have developed network protocols and algorithms based on various IoT/WSN platforms and devices, including TinyOS, Contiki OS, TelosB, IRIS, MicaZ, Raspberry Pi, Arduino, etc.
+				I have deployed solutions on various IoT/WSN platforms and devices, including TinyOS, Contiki OS, TelosB, IRIS, MicaZ, Raspberry Pi, Arduino, etc.
 			</p>
 
 			<p>
-				Though my PhD study, I have built a solid background in computer science (data structures and algorithms, computer networking, operating systems, database, etc). My background enables me to learn things quickly. In my spare time, I have had a bite of different technologies, such as 
-				Android development, P4 language, Web development, etc. 
+				As a beginning of my next professional career. I am ready to learn new technologies and face new challenges. 
 			</p>
 			<hr />
 		</div>
@@ -113,13 +108,13 @@
 				<li>
 					<b>WSN Deployment </b>
 					<p style="LINE-HEIGHT:20px;">
-					Designed and developed a complete WSN application suite for long-term environmental monitoring in cooperation with other group members, including node application, gateway, and management system
+					Developed the core components of a sensor node application for a WSN testbed of 100 nodes running RTOS, which integrated complex functionalities including sampling, routing, wireless reprogramming, compressed sensing, etc.
 					<button class='button_astext' id='wsn_btn' onclick="showDetail('wsn_btn','detail_wsn')"><i><u>Less</u></i></button>
 					</p>
 					<p style="display:block;" id='detail_wsn'>
 					-&ensp; The testbed has about 100 nodes of different platform types, including ATmega128 based devices (MicaZ and IRIS) and TI MSP430 based device (TelosB). <br>
-					-&ensp; The wireless networking is based on IEEE 802.15.4 (the underlying technology of ZigBee) <br>
-					-&ensp; Perform various tasks including upward routing, downward routing, over-the-air programming, compressed sensing, flash accessing, etc.  <br>
+					-&ensp; Enabled remote accessing by implementing multi-hop networking based on IEEE 802.15.4. (the underlying technology of ZigBee) <br>
+					-&ensp; Solved the MAC layer mismatch problem between heterogeneous node devices using a packet sniffer. <br>
 					-&ensp; Everything fits in the tiny nodes of 4 KB RAM (MicaZ) 
 					or 48 KB ROM (TelosB).
 					</p>
@@ -133,9 +128,9 @@
 					</p>
 
 					<p style="display:block;" id='detail_osr'>
-					-&ensp; Designed a novel Bloom filter to encode source-route which scales to networks with hundreds of hops. <br>
-					-&ensp; Applied opportunistic routing during packet forwarding and achieved packet delivery ratio > 98%. <br>
-					-&ensp; Designed an efficient method to build the routing table based on upward traffic which has negligible energy overhead. <br>
+					-&ensp; Improved the scalability by 5x by developing a Bloom filter based source routing algorithm, leading to the minimization of the packet overhead and the energy overhead. <br>
+					-&ensp; Achieved > 98% reliability by implementing opportunistic routing into the packet forwarding process. <br>
+					-&ensp; Minimized energy overhead by implementing an efficient method to build the routing table based on upward traffic. <br>
 					-&ensp; Implemented in TinyOS/nesC for various sensor platforms and deployed on a real-world WSN testbed.
 					</p>
 				</li>
@@ -149,7 +144,7 @@
 
 					<p style="display:block;" id='detail_md'>
 					-&ensp; Designed a control layer on top of exsiting approaches to coordinate the behaviors of the mobile base station and target nodes. <br>
-					-&ensp; Extended the tool to a mobile command/query system that enables efficient onsite diagnosis.
+					-&ensp; Enabled 2x faster deployment of new applications and reduced the labor for maintaining WSN testbed. 
 					 <br>
 					-&ensp; Implemented in TinyOS/nesC for various sensor platforms; <br>
 					-&ensp; Developed PC side gateway in Java.
@@ -162,10 +157,10 @@
 					<button class='button_astext' id='bm_btn' onclick="showDetail('bm_btn','detail_bm')"><i><u>Less</u></i></button>
 					</p>
 					<p style="display:block;" id='detail_bm'>
-					-&ensp; Performed network analysis including the link level characteristics, network level (topological) characteristics, and temporal characteristics. <br>
-					-&ensp; Designed metrics based on network entropy to concretely measure the extent of network topology dynamics.
+					-&ensp; Analyzed the network performance and routing dynamics of a real-world WSN testbed from three aspects including link level characteristics, routing level characteristics, and temporal characteristics. <br>
+					-&ensp; Demonstrated an effective metric based on entropy theory to measure the amplitude of topological dynamics.
 					<br>
-					-&ensp; Devised a benchmark data suite for the research community as a reference for protocol evaluation. Designed a missing path filling method to fill the holes in each topology following the principles of the routing protocol.
+					-&ensp; Devised the first WSN benchmark data suite with full topological information for the research community.
 					</p>
 				</li>
 				<li>
@@ -175,8 +170,8 @@
 					<button class='button_astext' id='rtr_btn' onclick="showDetail('rtr_btn','detail_rtr')"><i><u>Less</u></i></button>
 					</p>
 					<p style="display:block;" id='detail_rtr'>
-					-&ensp; Designed a novel path encoding method to encode the path information in a 4-byte field in each data packet. <br>
-					-&ensp; Deployed the algorithm on real-world WSN testbed and achieved 96% reconstruction accuracy. <br>
+					-&ensp; Reduced packet overhead by implementing a path encoding mechanism using a 4-byte field in each packet. <br>
+					-&ensp; Achieved > 96% reconstruction accuracy by implementing a decoding algorithm based on compressed sensing. <br>
 					-&ensp; Implemented in TinyOS/nesC for various sensor platforms. <br>
 					-&ensp; Implemented PC side decompression algorithm in Python. <br>
 					</p>
@@ -219,7 +214,7 @@
 					<b>Greenhouse</b> 
 					<p style="LINE-HEIGHT:20px;">
 					-&ensp; Designed a system using TelosB platform (with Contiki OS) to monitor temperature, humidity, light, and soil moisture for home plants. <br>
-					-&ensp; Implemented the wireless communication based in IEEE 802.15.4 and the RPL protocol. <br>
+					-&ensp; Applied RPL routing protocol to build a low power IPv6 multi-hop network.. <br>
 					-&ensp; Developed PC side server using Python, which parses the sensor data and sends notification using email (SMTP) and SMS (Twillio).
 					</p>
 				</li>
